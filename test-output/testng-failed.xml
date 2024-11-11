@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.github.listeners.TestEventListenersUtility"/>
+  </listeners>
+  <test thread-count="5" name="Git Hub API Test CRUD functionality(failed)">
+    <classes>
+      <class name="com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality">
+        <methods>
+          <include name="validateDeleteRepository_NotExists"/>
+          <include name="beforeSuite"/>
+          <include name="validateDeleteRepositoryFunctionality"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality -->
+    </classes>
+  </test> <!-- Git Hub API Test CRUD functionality(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

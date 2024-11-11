@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-10T19:46:12 CST" name="Smoke Suite" finished-at="2024-11-10T19:46:18 CST" duration-ms="5697">
+    <groups>
+    </groups>
+    <test started-at="2024-11-10T19:46:12 CST" name="Git Hub API Test Get functionality" finished-at="2024-11-10T19:46:15 CST" duration-ms="2859">
+      <class name="com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality@4229bb3f]" started-at="2024-11-10T19:46:12 CST" name="beforeClass" finished-at="2024-11-10T19:46:12 CST" duration-ms="417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="validateGetSingleRepository()[pri:0, instance:com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality@4229bb3f]" started-at="2024-11-10T19:46:12 CST" name="validateGetSingleRepository" finished-at="2024-11-10T19:46:14 CST" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetSingleRepository -->
+        <test-method signature="validateGetData_InvalidRepositoryName()[pri:1, instance:com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality@4229bb3f]" started-at="2024-11-10T19:46:14 CST" name="validateGetData_InvalidRepositoryName" finished-at="2024-11-10T19:46:14 CST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetData_InvalidRepositoryName -->
+        <test-method signature="validateGetAllRepositories()[pri:2, instance:com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality@4229bb3f]" started-at="2024-11-10T19:46:14 CST" name="validateGetAllRepositories" finished-at="2024-11-10T19:46:15 CST" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGetAllRepositories -->
+      </class> <!-- com.github.tests.GETData.ValidateGitHub_GetRepository_Functionality -->
+    </test> <!-- Git Hub API Test Get functionality -->
+    <test started-at="2024-11-10T19:46:15 CST" name="Git Hub API Test CRUD functionality" finished-at="2024-11-10T19:46:18 CST" duration-ms="2569">
+      <class name="com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:12 CST" name="beforeSuite" finished-at="2024-11-10T19:46:12 CST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:15 CST" name="beforeClass" finished-at="2024-11-10T19:46:15 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="validateAddRepositoryFunctionality()[pri:0, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:15 CST" name="validateAddRepositoryFunctionality" description="validate add repository functionality" finished-at="2024-11-10T19:46:16 CST" duration-ms="1258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddRepositoryFunctionality -->
+        <test-method signature="validateAddRepositoryWithExistingName_Invalid()[pri:1, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:16 CST" name="validateAddRepositoryWithExistingName_Invalid" description="validate add repository with existing repository name" finished-at="2024-11-10T19:46:16 CST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddRepositoryWithExistingName_Invalid -->
+        <test-method signature="validateUpdateRepositoryNameFunctionality()[pri:2, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:16 CST" name="validateUpdateRepositoryNameFunctionality" description="validate update repository name functionality" finished-at="2024-11-10T19:46:17 CST" depends-on-methods="com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality.validateAddRepositoryFunctionality" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUpdateRepositoryNameFunctionality -->
+        <test-method signature="validateDeleteRepositoryFunctionality()[pri:3, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:17 CST" name="validateDeleteRepositoryFunctionality" description="validate delete repository functionality" finished-at="2024-11-10T19:46:17 CST" depends-on-methods="com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality.validateUpdateRepositoryNameFunctionality" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteRepositoryFunctionality -->
+        <test-method signature="validateDeleteRepository_NotExists()[pri:4, instance:com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality@57cf54e1]" started-at="2024-11-10T19:46:17 CST" name="validateDeleteRepository_NotExists" description="validate delete repository that doesn&#039;t exists functionality" finished-at="2024-11-10T19:46:18 CST" depends-on-methods="com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality.validateDeleteRepositoryFunctionality" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDeleteRepository_NotExists -->
+      </class> <!-- com.github.tests.CRUD.ValidateGitHubRepository_CRUD_Functionality -->
+    </test> <!-- Git Hub API Test CRUD functionality -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>
